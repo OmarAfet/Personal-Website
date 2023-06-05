@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../Styles/General.css" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="../tailwind.config"></script>
+		<script src="../JavaScript/Appearance.js"></script>
+		<script src="../JavaScript/Menu.js"></script>
+		<title>M7ilan Personal Website</title>
+	</head>
+	<body id="Home" class="bg-[#e1e1e1] text-[#1e1e1e] dark:bg-[#1e1e1e] dark:text-[#e1e1e1]">
+		<!-- Header -->
+		<div class="z-10 bg-[#dadad9] dark:bg-[#252526] h-[80px] flex justify-between items-center max-lg:px-[32px] px-[64px] gap-[32px] select-none fixed w-full">
+			<div><a class="max-lg:text-[20px] text-[32px] font-[900] pr-[4px] hover:text-[#33cc66] dark:hover:text-[#4d33cc] cursor-pointer duration-300">M7ilan</a><span class="opacity-50 text-[12px]">Personal Website</span></div>
+			<div class="max-lg:hidden flex gap-[32px]">
+				<a href="#Home" class="cursor-pointer hover:text-[#33cc66] dark:hover:text-[#4d33cc] duration-300">Home</a>
+				<a href="#Projects" class="cursor-pointer hover:text-[#33cc66] dark:hover:text-[#4d33cc] duration-300">Projects</a>
+			</div>
+			<div class="max-lg:hidden flex">
+				<div id="mode-btn" onclick="toggleDarkMode()" class="bg-[#cccccc] hover:shadow-lg dark:bg-[#333333] px-[12px] py-[8px] rounded-[4px] cursor-pointer font-[600]"></div>
+			</div>
+			<div onclick="toggleDropdown()" class="lg:hidden">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 100" fill="none">
+					<rect x="10" y="25" width="80" height="10" rx="5" class="fill" />
+					<rect x="10" y="45" width="80" height="10" rx="5" class="fill" />
+					<rect x="10" y="65" width="80" height="10" rx="5" class="fill" />
+				</svg>
+			</div>
+
+			<div class="flex-col absolute p-[16px] bg-[#dadad9] rounded-xl dark:bg-[#252526] mt-[16px] gap-[16px] hidden top-full" style="width: calc(100% - (64px) * 2)" id="dropdown-menu">
+				<a href="#Home" class="cursor-pointer hover:text-[#33cc66] dark:hover:text-[#4d33cc] duration-300">Home</a>
+				<a href="#Projects" class="cursor-pointer hover:text-[#33cc66] dark:hover:text-[#4d33cc] duration-300">Projects</a>
+				<div id="mode-btn" onclick="toggleDarkMode()" class="bg-[#cccccc] hover:shadow-lg dark:bg-[#333333] px-[12px] py-[8px] rounded-[4px] cursor-pointer font-[600]"></div>
+			</div>
+		</div>
+
+		<!-- Body -->
+		<div class="flex flex-col gap-[320px] max-lg:mx-[10%] mx-[25%] pt-[200px]">
+			<!-- Portfolio -->
+			<div class="m-auto text-center">
+				<div class="max-lg:text-[32px] text-[64px] font-[900] pb-[64px]">Welcome to my Freelancer Portfolio!</div>
+				<div class="max-lg:text-[12px] text-[16px]">
+					Honesty, Simplicity, and Challenging Projects - these are the values that define my approach to freelancing. I'm thrilled to have you here, exploring my work and the passion I pour into every project I undertake.
+					<br /><br /><br />
+					As a freelancer, I find joy in taking on diverse challenges that push my boundaries and allow me to constantly grow as a professional. With a keen interest in programming languages, particularly Python, HTML, CSS, JavaScript, Lua, and a few others that I have dabbled in, like Java, and C#, I bring a versatile skill set to the table.
+					<br /><br /><br />
+					My journey as a freelancer has taught me the importance of delivering high-quality results while maintaining clear and open communication with clients. I value transparency and believe that honest collaboration lays the foundation for successful projects. Whether you have a specific idea in mind or need assistance in shaping your vision, I am here to listen, advise, and bring your project to life.
+					<br /><br /><br />
+					In the realm of programming, I thrive on finding elegant solutions to complex problems. My expertise lies in crafting efficient code, developing user-friendly interfaces, and ensuring seamless functionality. From building robust web applications to creating captivating websites, I am passionate about leveraging technology to make a meaningful impact.
+					<br /><br /><br />
+					Feel free to browse through my portfolio, where you'll find a collection of projects that highlight my versatility and dedication to excellence. Each endeavor showcases my commitment to understanding clients' needs, translating ideas into code, and delivering results that exceed expectations.
+					<br /><br /><br />
+					If you're looking for a freelancer who is passionate, reliable, and adept at tackling programming challenges head-on, then look no further. I would be thrilled to discuss how I can contribute to your next project. Get in touch, and let's embark on a journey of innovation together.
+					<br /><br /><br />
+					Thank you for visiting, and I look forward to connecting with you soon!
+					<br /><br /><br />
+					Best regards,
+					<br /><br /><br />
+					Omar Alenezi <span class="max-lg:text-[6px] text-[12px]">AKA</span> M7ilan
+				</div>
+			</div>
+
+			<!-- Projects -->
+			<div id="Projects" class="text-center">
+				<div class="max-lg:text-[32px] text-[64px] font-[900] pb-[64px]">Projects</div>
+				<div class="flex max-lg:grid max-lg:grid-cols-1 gap-[64px] justify-between text-center">
+					<div class="flex-1 flex gap-[32px] flex-col justify-between p-[24px] bg-[#dadad9] dark:bg-[#252526] rounded-xl shadow-lg ease-in-out relative duration-500 top-0 hover:-top-2 transition-all">
+						<div class="max-lg:text-[16px] text-[32px] font-[600]">M7 UI Library</div>
+						<div class="max-lg:text-[12px] text-[16px]">M7 UI Library is a stunning, user-friendly, and lightweight Roblox UI Library. It empowers developers to effortlessly create customizable buttons and interactive elements while ensuring security measures against detection.</div>
+						<a target="_blank" href="https://github.com/M7ilan/M7-UI-Library" class="bg-[#cccccc] hover:shadow-lg dark:bg-[#333333] px-[12px] py-[8px] rounded-[4px] cursor-pointer font-[600]">view</a>
+					</div>
+					<div class="flex-1 flex gap-[32px] flex-col justify-between p-[24px] bg-[#dadad9] dark:bg-[#252526] rounded-xl shadow-lg ease-in-out relative duration-500 top-0 hover:-top-2 transition-all">
+						<div class="max-lg:text-[16px] text-[32px] font-[600]">CoderHub</div>
+						<div class="max-lg:text-[12px] text-[16px]">CoderHub Solutions is a compilation of my coding challenge solutions from CoderHub. It's a valuable resource for learning and enhancing coding skills. Explore the repository to find solutions to various challenges and stay updated with new additions.</div>
+						<a target="_blank" href="https://github.com/M7ilan/CoderHub" class="bg-[#cccccc] hover:shadow-lg dark:bg-[#333333] px-[12px] py-[8px] rounded-[4px] cursor-pointer font-[600]">view</a>
+					</div>
+					<div class="flex-1 flex gap-[32px] flex-col justify-between p-[24px] bg-[#dadad9] dark:bg-[#252526] rounded-xl shadow-lg ease-in-out relative duration-500 top-0 hover:-top-2 transition-all">
+						<div class="max-lg:text-[16px] text-[32px] font-[600]">Password Generator</div>
+						<div class="max-lg:text-[12px] text-[16px]">Password Generator with Blacklist: My first project, igniting my programming journey. This command-line tool creates secure passwords and allows custom blacklist settings. Overcame challenges, fueled passion for programming.</div>
+						<a target="_blank" href="https://github.com/M7ilan/Password-Generator" class="bg-[#cccccc] hover:shadow-lg dark:bg-[#333333] px-[12px] py-[8px] rounded-[4px] cursor-pointer font-[600]">view</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="mx-auto">
+				<div class="max-lg:text-[32px] text-[64px] font-[900] pb-[64px]">More Soon..</div>
+			</div>
+		</div>
+	</body>
+</html>
