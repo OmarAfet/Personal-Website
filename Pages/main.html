@@ -20,7 +20,7 @@
 	<body id="Home" class="bg-[#e1e1e1] text-[#1e1e1e] dark:bg-[#1e1e1e] dark:text-[#e1e1e1]">
 		<!-- Header -->
 		<div class="z-10 bg-[#dadad9] dark:bg-[#252526] h-[80px] flex justify-between items-center max-lg:px-[32px] px-[64px] gap-[32px] select-none fixed w-full">
-			<div><a class="max-lg:text-[20px] text-[32px] font-[900] pr-[4px] hover:text-[#33cc66] dark:hover:text-[#4d33cc] cursor-pointer duration-300">Omar Afet</a><span class="opacity-50 text-[12px]">Personal Website</span></div>
+			<div><a class="max-lg:text-[20px] text-[32px] font-[900] pr-[4px] hover:text-[#33cc66] dark:hover:text-[#4d33cc] cursor-pointer duration-300">Omar Afet</a><span class="opacity-50 max-lg:text-[8px] text-[12px]">Personal Website</span></div>
 			<div class="max-lg:hidden flex gap-[32px]">
 				<a href="#Home" class="cursor-pointer hover:text-[#33cc66] dark:hover:text-[#4d33cc] duration-300">Home</a>
 				<a href="#Projects" class="cursor-pointer hover:text-[#33cc66] dark:hover:text-[#4d33cc] duration-300">Projects</a>
@@ -36,7 +36,7 @@
 				</svg>
 			</div>
 
-			<div class="flex-col absolute p-[16px] bg-[#dadad9] rounded-xl dark:bg-[#252526] mt-[16px] gap-[16px] hidden top-full" style="width: calc(100% - (64px) * 2)" id="dropdown-menu">
+			<div class="flex-col w-[calc(100%-64px)] absolute p-[16px] bg-[#dadad9] rounded-xl dark:bg-[#252526] mt-[16px] gap-[16px] top-full opacity-0 transition-all duration-300 ease-in-out flex pointer-events-none shadow-lg" id="dropdown-menu">
 				<a href="#Home" class="cursor-pointer hover:text-[#33cc66] dark:hover:text-[#4d33cc] duration-300">Home</a>
 				<a href="#Projects" class="cursor-pointer hover:text-[#33cc66] dark:hover:text-[#4d33cc] duration-300">Projects</a>
 				<div id="mode-btn" onclick="toggleDarkMode()" class="bg-[#cccccc] hover:shadow-lg dark:bg-[#333333] px-[12px] py-[8px] rounded-[4px] cursor-pointer font-[600]"></div>
@@ -44,7 +44,7 @@
 		</div>
 
 		<!-- Body -->
-		<div class="flex flex-col gap-[320px] max-lg:mx-[10%] mx-[25%] pt-[200px]">
+		<div id="body-id" class="flex flex-col gap-[320px] max-lg:mx-[10%] mx-[25%] pt-[200px] blur-0 transition-all duration-300 ease-in-out">
 			<!-- Portfolio -->
 			<div class="m-auto text-center">
 				<div class="max-lg:text-[32px] text-[64px] font-[900] pb-[64px]">Welcome to my Freelancer Portfolio!</div>
@@ -71,7 +71,7 @@
 
 			<!-- Projects -->
 			<div id="Projects" class="text-center">
-				<div class="max-lg:text-[32px] text-[64px] font-[900] py-[100px]">Projects</div>
+				<div class="max-lg:text-[32px] text-[64px] font-[900] pb-[100px] pt-[180px]">Projects</div>
 				<div class="flex max-lg:grid max-lg:grid-cols-1 gap-[64px] justify-between text-center">
 					<div class="flex-1 flex gap-[32px] flex-col justify-between p-[24px] bg-[#dadad9] dark:bg-[#252526] rounded-xl shadow-lg ease-in-out relative duration-500 top-0 hover:-top-2 transition-all">
 						<div class="max-lg:text-[16px] text-[32px] font-[600]">CoderHub</div>
