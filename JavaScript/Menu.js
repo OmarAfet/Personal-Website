@@ -1,5 +1,8 @@
 function toggleDropdown() {
   var dropdown = document.getElementById("dropdown-menu");
-  dropdown.classList.toggle("hidden");
-  dropdown.classList.toggle("flex");
+  var body = document.getElementById("body-id");
+  body.classList.toggle("blur-[4px]")
+  dropdown.classList.toggle("opacity-100");
+  dropdown.classList.toggle("pointer-events-none");
+  dropdown.classList.toggle("pointer-events-auto");
 }
