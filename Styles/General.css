@@ -3,7 +3,7 @@
   font-weight: 500;
   margin: 0px;
   padding: 0px;
-  transition: background-color 300ms, color 50ms, box-shadow 300ms, fill 300ms;
+  transition: background-color 300ms, color 50ms, box-shadow 300ms, fill 300ms, top 300ms, right 300ms, bottom 300ms, left 300ms;
 }
 
 body {

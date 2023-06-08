@@ -11,21 +11,18 @@ const projects = [
 	},
 ];
 
-// Function to generate the HTML for each project
 function generateProjectHTML(project) {
 	return `
-    <div class="flex-1 flex gap-[32px] flex-col justify-between p-[24px] bg-[#dadad9] dark:bg-[#252526] rounded-xl shadow-lg ease-in-out relative duration-500 top-0 hover:-top-2 transition-all">
-      <div class="max-lg:text-[16px] text-[32px] font-[600]">${project.title}</div>
-      <div class="max-lg:text-[12px] text-[16px]">${project.description}</div>
-      <a target="_blank" href="${project.link}" class="bg-[#cccccc] hover:shadow-lg dark:bg-[#333333] px-[12px] py-[8px] rounded-[4px] cursor-pointer font-[600]">view</a>
-    </div>
+	<div class="flex-1 flex gap-[32px] flex-col justify-between p-[24px] bg-[#dadad9] dark:bg-[#252526] rounded-xl shadow-lg relative top-0 hover:-top-2">
+		<div class="max-lg:text-[16px] text-[32px] font-[600]">${project.title}</div>
+		<div class="max-lg:text-[12px] text-[16px]">${project.description}</div>
+		<a target="_blank" href="${project.link}" class="bg-[#cccccc] hover:shadow-lg dark:bg-[#333333] px-[12px] py-[8px] rounded-[4px] cursor-pointer font-[600]">view</a>
+	</div>
   `;
 }
 
-// Get the container element to append the projects
 const container = document.getElementById("projects-container");
 
-// Generate and append the HTML for each project
 projects.forEach((project) => {
 	const projectHTML = generateProjectHTML(project);
 	container.innerHTML += projectHTML;
