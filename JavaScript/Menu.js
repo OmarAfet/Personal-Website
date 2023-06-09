@@ -1,8 +1,20 @@
+document.addEventListener("DOMContentLoaded", () => {
+	const dropdown = document.getElementById("dropdown-menu");
+	const body = document.getElementById("body-id");
+
+	body.addEventListener("click", () => {
+		if (dropdown.classList.contains("opacity-100") && !dropdown.classList.contains("pointer-events-none")) {
+			toggleDropdown();
+		}
+	});
+});
+
 function toggleDropdown() {
-  var dropdown = document.getElementById("dropdown-menu");
-  var body = document.getElementById("body-id");
-  body.classList.toggle("blur-[4px]")
-  dropdown.classList.toggle("opacity-100");
-  dropdown.classList.toggle("pointer-events-none");
-  dropdown.classList.toggle("pointer-events-auto");
+	const dropdown = document.getElementById("dropdown-menu");
+	const body = document.getElementById("body-id");
+
+	body.classList.toggle("blur-[4px]");
+	body.classList.toggle("select-none");
+	dropdown.classList.toggle("opacity-100");
+	dropdown.classList.toggle("pointer-events-none");
 }
